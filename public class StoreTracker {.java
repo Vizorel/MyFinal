@@ -19,6 +19,7 @@ public class  ConfigStore extends Store
     // this needs to config the store so it will set the number of aisles and what type of food will be placed in each section of the isle
     // all though 3d arrays are hard a 4d array will need to be used in this program 
     /* String[][][][] storeStuff = new int[rows][colums][sections][Product (always 1)]; */
+    /*
 }
 
 public class Aisle extends Store
