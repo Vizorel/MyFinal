@@ -2,12 +2,28 @@ public class StoreTracker {
     public String reorderNotif(String product, int amount)
     {
         // there will be 2 notifications 1) an alert that you are low on said item and need to order more 2) you are out of said item and need to reorder said item
-        // this will only be called if you are low or out of said item in your inventory not the shelf 
+        // this will only be called if you are low or out of said item in your inventory not the shelf
     }
      public String restockNotif(String product, int amount)
     {
         // this will have 2 notifications 1) an alert that you are low on said item and need to restock the shelves 2) you are out of said item and need to restock the shelves
         // on the 2nd condition restock notif
+    }
+    public String refillInventory (String product, int amount)
+    {
+        //this is called by the user to submit a refill into the program that will update the amount of said product in inventory
+    }
+
+    public Boolean restock (String product)
+    {
+        //this will be called by the user to restock the shelves, if the shelves were successfully restocked then it will return True however if you are out of said item in your inventory than it will return as False
+    }
+
+    public String productBought ()
+    {
+        /*the user will call this and it will ask what was bought and how much of it was it bought.
+        After this it will ask anything else and if yes it will repeat asking what was bought and how much, if the user replys no than it will stop asking and then update the shelves
+        since a costumer can only purchase the amount of said product that is on the shelf there won't be an overflow error*/
     }
 
     public static void main (String [] args)
@@ -39,7 +55,7 @@ public class Aisle extends Store
 
 public class Shelf extends Aisle
 {
-    public String getShelf() //this will get the 
+    public String getShelf()
     {
 
     }
@@ -50,7 +66,7 @@ public class Section extends Shelf
     {
         // returns the item and amount on the shelf like this Apples: 10
         /* if the amount on the shelf is low it will call on restockNotif and will call check inventory if there is any more of said product to restock.
-        If the amount of said product is low or you are out of said product than it will also call on reorderNotif */
+        If the amount of said product is low or you are out of said product than it will only restock the remaining amount in inventory*/
     }
 }
 
@@ -60,4 +76,5 @@ public class Inventory extends Shelf
     {
 
     }
+    
 }
