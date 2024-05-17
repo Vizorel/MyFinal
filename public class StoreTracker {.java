@@ -1,12 +1,25 @@
 public class StoreTracker {
-    public String reorderNotif(String product, int amount)
-    {
-        // there will be 2 notifications 1) an alert that you are low on said item and need to order more 2) you are out of said item and need to reorder said item
-        // this will only be called if you are low or out of said item in your inventory not the shelf
+    public String reorderNotif(String product, int amount) // this will only be called if you are low or out of said item in your inventory not the shelf
+    {      
+        if (amount == 0) //an alert that you are out of said item and need to reorder said item
+        {
+            return "You are out of " + product + " and need to reorder.";
+        }
+        else; //an alert that you are low on said item and need to order more
+        {
+            return "You are low on " + product + " and need to order more.";
+        }
     }
      public String restockNotif(String product, int amount)
     {
-        // this will have 2 notifications 1) an alert that you are low on said item and need to restock the shelves 2) you are out of said item and need to restock the shelves
+        if (amount == 0) //an alert that you are out of said item and need to restock the shelves
+        {
+            return "You are out of " + product + " on the shelves and need to restock.";
+        }
+        else //an alert that you are low on said item and need to restock the shelves
+        { 
+            return "You are low on " + product + " on the shelves and need to restock.";
+        }
         // on the 2nd condition restock notif
     }
     public String refillInventory (String product, int amount)
@@ -38,6 +51,32 @@ public class Store
 
 public class  ConfigStore extends Store
 {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("welcome to Store Cofiguration");
+    System.out.println();
+    System.out.print("Are you Checking Stock, Updating store layout or updating stock (Check / Update1 / Update2): ");
+    String configResponse = scanner.nextLine();
+    int exloop = 0;
+    while(exloop = 0)
+    {
+        if(configResponse.equals("Check")
+        {
+            
+        }
+        else if(configResponse.equals("Update1")
+        {
+            
+        }
+        else if(configResponse.equals("Update2")
+        {
+            
+        }
+        else;
+        {
+            System.out.println
+        }
+    }
+
     // this needs to config the store so it will set the number of aisles, number of shelves, and what type of food will be placed in each section of the aisle
     // this will also configure the inventory aswell
     /* String[][][][] storeStuff = new int[Aisles][Shelves][Sections][Product (always 1)]; */
