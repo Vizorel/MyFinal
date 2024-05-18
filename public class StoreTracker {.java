@@ -51,32 +51,6 @@ public class Store
 
 public class  ConfigStore extends Store
 {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("welcome to Store Cofiguration");
-    System.out.println();
-    System.out.print("Are you Checking Stock, Updating store layout or updating stock (Check / Update1 / Update2): ");
-    String configResponse = scanner.nextLine();
-    int exloop = 0;
-    while(exloop = 0)
-    {
-        if(configResponse.equals("Check")
-        {
-            
-        }
-        else if(configResponse.equals("Update1")
-        {
-            
-        }
-        else if(configResponse.equals("Update2")
-        {
-            
-        }
-        else;
-        {
-            System.out.println
-        }
-    }
-
     // this needs to config the store so it will set the number of aisles, number of shelves, and what type of food will be placed in each section of the aisle
     // this will also configure the inventory aswell
     /* String[][][][] storeStuff = new int[Aisles][Shelves][Sections][Product (always 1)]; */
